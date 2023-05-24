@@ -801,9 +801,9 @@ img {
 
 .modal {
   position: absolute;
-  top: calc(50%);
-  left: calc(50%);
-  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 
   padding: 72px 24px 24px;
 
@@ -825,7 +825,7 @@ img {
 
 .backdrop.is-hidden.modal {
   opacity: 0;
-  transform: translateX(-50%) translateY(-80%);
+  transform: translateY(-80%);
 }
 
 .modal-close-button {
@@ -909,7 +909,7 @@ img {
 }
 .form-field:hover,
 .form-field:focus {
-  outline: 1px solid var(--primary-brand);
+  border: 1px solid var(--primary-brand);
 }
 
 .form-icon {
@@ -946,7 +946,7 @@ img {
 }
 .form-comment:hover,
 .form-comment:focus {
-  outline: 1px solid var(--primary-brand);
+  border: 1px solid var(--primary-brand);
 }
 
 .form-agreement {
@@ -977,7 +977,7 @@ img {
 }
 
 .form-check-input:focus-visible {
-  outline-color: var(--pressed-state);
+  border-color: var(--pressed-state);
 }
 
 .agreement-text {
